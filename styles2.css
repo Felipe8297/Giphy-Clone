@@ -1,0 +1,62 @@
+body {
+  font-family: "Mulish", sans-serif;
+  margin: 2em;
+  background: #13121a;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 28px;
+  color: #fff;
+}
+
+.horizontal {
+  display: flex;
+}
+
+.horizontal button {
+  border: 2px solid #fff;
+  background-color: #fff;
+  color: #000;
+  outline: none;
+  border-radius: 0px 14px 14px 0px;
+  padding: 8px;
+  width: 110px;
+  font-weight: bold;
+}
+
+.horizontal input {
+  border: 2px solid #fff;
+  background-color: #13121a;
+  color: #fff;
+  outline: none;
+  border-radius: 14px 0px 0px 14px;
+  margin: 0 auto;
+  padding-left: 16px;
+  width: 500px;
+}
+
+.gif {
+  border-radius: 14px;
+  border: solid 1px #fff;
+  margin-top: 30px;
+}
+
+.erro {
+  background: red;
+  padding: 10px;
+  color: #fff;
+  border-radius: 6px;
+}
+
+.esconder {
+  display: none;
+}

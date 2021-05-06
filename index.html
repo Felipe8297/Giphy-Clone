@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500&display=swap" rel="stylesheet" />
+
+  <title>Gif Search!</title>
+
+  <link rel="stylesheet" href="/styles2.css" />
+  <script src="/app.js" defer></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <img src="https://cdn.glitch.com/339af6bf-e184-43a7-83cb-188ca2ee196d%2FGIPHY%20Logo%2075px.png?v=1616971348607" />
+    <h1>
+      Seu melhor jeito de decobrir gifs.
+    </h1>
+    <div class="horizontal">
+      <input class="nome-busca" name="nome-busca" type="text" placeholder="Seu texto aqui">
+      <button onclick="buscaGif()">
+      Buscar
+      </button>
+    </div>
+
+    <div class="espera esconder">
+      <lottie-player src="https://assets9.lottiefiles.com/datafiles/MUp3wlMDGtoK5FK/data.json" background="transparent"
+        speed="1" style="width: 180px; height: 180px;" loop autoplay></lottie-player>
+    </div>
+
+    <img class="gif esconder">
+
+    <div class="erro esconder">
+      Erro nenhum gif encontrado!
+    </div>
+
+  </div>
+</body>
+
+</html>
