@@ -10,9 +10,18 @@ function buscaGif() {
 
   espera.classList.remove("esconder");
   
+  
   console.log(nomeBusca.value)
 
-  
+  if (nomeBusca == '') {
+    espera.classList.add("remover");
+    gif.classList.add("esconder");
+  }
+
+  else {
+    gif.classList.remove("esconder");
+    erro.classList.add("esconder");
+  }
 
   let url =
     `https://api.giphy.com/v1/gifs/random?tag=${nomeBusca.value}&api_key=kWAit38VfEla0znlVLPxYLAVRrNSeGCX`;
@@ -27,10 +36,11 @@ function buscaGif() {
       
       gif.src = dados.data.image_original_url;
       gif.classList.remove("esconder");
-    
+      gif.classList.add("esconder");
+      erro.classList.add("esconder")
+      erro.classList.remove("esconder");
       espera.classList.add("esconder");
     })
 
   })
 }
-
