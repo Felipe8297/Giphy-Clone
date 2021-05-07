@@ -61,3 +61,6 @@ h1 {
 .esconder {
   display: none;
 }
+.esconder-erro {
+  display: none;
+}
